@@ -1,12 +1,50 @@
-body {
-    font-family: Lobster, sans-serif;
+/* Sets a universal size boxing rule */
+*, *:before, *:after {
+  box-sizing: border-box;
 }
+
+html {
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+  }
+
+body {
+    width: 960px;
+    margin-right: auto; /* evenly distribute the margins the right side */
+    margin-left: auto; /* evenly distribute the margins the left side */
+}
+
+h1, h2 {
+    font-family: Lobster, cursive;
+}
+
 h1 {
     color: blueviolet;
 }
+
 h2 {
     color: blue;
 }
-p{
+
+p, form {
     font-size: 16px;
+    font-family: Roboto, sans-serif;
+}
+
+a:link {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+a:visited {
+  font-style: italic;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  background-color: var(--color-light-grey);
 }
