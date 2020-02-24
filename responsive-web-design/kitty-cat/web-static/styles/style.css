@@ -12,6 +12,8 @@ body {
     width: 960px;
     margin-right: auto; /* evenly distribute the margins the right side */
     margin-left: auto; /* evenly distribute the margins the left side */
+    background-color: black;
+    color: #58e3bd;
 }
 
 h1, h2 {
@@ -19,7 +21,7 @@ h1, h2 {
 }
 
 h1 {
-    color: blueviolet;
+    color: #d80505;
     font-size: 40px;
 }
 
@@ -31,6 +33,14 @@ h2 {
 p, form, li {
     font-size: 16px;
     font-family: Roboto, sans-serif;
+}
+
+.pink-text {
+    color: deeppink; /* Overriding body element's CSS */
+}
+
+.blue-text {
+    color: aliceblue; /* because .blue-text is declared after .pink-text, it overrides the attributes of .pink-text */
 }
 
 a:link {
@@ -49,4 +59,20 @@ a:hover {
 
 a:active {
   background-color: var(--color-light-grey);
+}
+
+.thick-green-border {
+    border-color: #17bd22;
+    border-width: 10px;
+    border-style: solid;
+    border-radius: 50%;
+  }
+
+  .smaller-image {
+    width: 100px;
+  }
+
+/* using attribute selectors */
+[type='radio'], button {
+  margin: 20px 0px 20px 0px;
 }
