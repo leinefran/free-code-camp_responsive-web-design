@@ -16,6 +16,27 @@ body {
     color: #58e3bd;
 }
 
+/* ================================================= */
+/* Styling each section */
+.about-cats {
+    background-color: white;
+}
+
+.cat-photos {
+    background-color: black;
+}
+
+.cat-pref {
+    background-color: beige;
+}
+
+.form {
+    background-color: white;
+}
+
+/* ================================================= */
+
+
 h1, h2 {
     font-family: Lobster, cursive;
 }
@@ -40,7 +61,7 @@ p, form, li {
 }
 
 .blue-text {
-    color: aliceblue; /* because .blue-text is declared after .pink-text, it overrides the attributes of .pink-text */
+    color: blue; /* because .blue-text is declared after .pink-text, it overrides the attributes of .pink-text */
 }
 
 a:link {
