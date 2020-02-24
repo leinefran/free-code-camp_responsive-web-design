@@ -25,6 +25,7 @@ body {
 
 .cat-photos {
     background-color: black;
+    transform: skewY(-10deg); /* skew selected element along its Y (vertical) axis */
 }
 
 .cat-pref {
