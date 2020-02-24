@@ -20,6 +20,7 @@ body {
 /* Styling each section */
 .about-cats {
     background-color: white;
+    transform: skewX(24deg); /* the function skewX() from the transform property skews the selected element along its X (horizontal) axis by a given degree. */
 }
 
 .cat-photos {
