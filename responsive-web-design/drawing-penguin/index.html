@@ -8,6 +8,17 @@
             :root {
                 --penguin-belly: pink; /* :root is a pseudo-class selector that matches the root element of the document, usually the html element. By creating your variables in :root, they will be available globally and can be accessed from any other selector in the style sheet. */
             }
+
+            /* when your screen is smaller or larger than your media query break point, you can change the value of a variable, and it will apply its style wherever it is used. */
+            @media (max-width: 350px) {
+                :root {
+                /* add code below */
+                    --penguin-size: 200px;
+                    --penguin-skin: black;
+                /* add code above */
+                }
+            }
+
             .penguin {
                 /* change code below */
                 --penguin-skin: gray;
