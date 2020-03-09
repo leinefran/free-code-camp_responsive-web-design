@@ -1,35 +1,39 @@
-html {
-    box-sizing: border-box;
-}
-main, header, section, aside, footer {
-    margin: 0;
-    padding: 20px;
-    border: 1px solid #000000;
-    color: #fff;
-}
+/* -------- CSS for Mobile Devices --------- */
 
-main {
-    background: #000;
-}
+@media only screen and (max-width: 600px) {
+    html {
+        box-sizing: border-box;
+    }
+    main, header, section, aside, footer {
+        margin: 0;
+        padding: 20px;
+        border: 1px solid #000000;
+        color: #fff;
+    }
 
-.header {
-    background: #03a9f4;
-}
+    main {
+        background: #000;
+    }
 
-.hero {
-    background: #d22b1f;
-}
+    .header {
+        background: #03a9f4;
+    }
 
-.content {
-    background: #129a22;
-}
+    .hero {
+        background: #d22b1f;
+    }
 
-.sidebar {
-    border: 1px solid #000;
-    background: #673ab7;
-}
+    .content {
+        background: #129a22;
+    }
 
-footer {
-    border: 1px solid #000;
-    background: #616161;
+    .sidebar {
+        border: 1px solid #000;
+        background: #673ab7;
+    }
+
+    footer {
+        border: 1px solid #000;
+        background: #616161;
+    }
 }
