@@ -1,39 +1,67 @@
-/* -------- CSS for Mobile Devices --------- */
+/* --------- CSS for tablets and desktops ---------- */
 
-@media only screen and (max-width: 600px) {
-    html {
-        box-sizing: border-box;
-    }
-    main, header, section, aside, footer {
-        margin: 0;
-        padding: 20px;
-        border: 1px solid #000000;
-        color: #fff;
-    }
+@media screen and (min-width: 640px) {
 
-    main {
-        background: #000;
-    }
-
-    .header {
-        background: #03a9f4;
-    }
-
-    .hero {
-        background: #d22b1f;
+    .flex-container {
+        display: flex;
     }
 
     .content {
-        background: #129a22;
+        flex: 1;
     }
 
     .sidebar {
-        border: 1px solid #000;
-        background: #673ab7;
+        flex: 0 1 300px; /* flex-grow, flex-shrink and flex-basis.
+        According to CSS-Tricks, that last property, flex-basis, “defines the default size of an element before the remaining space is distributed.” */
     }
+}
 
-    footer {
-        border: 1px solid #000;
-        background: #616161;
-    }
+/* -------- CSS for Mobile Devices --------- */
+*,:after,:before {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;
+}
+
+/* set the max-width of the element to 1200px (converted into rem units), and also center it on widths larger than 1200px */
+.wrapper {
+margin: auto;
+max-width: 75rem;
+}
+
+main, header, section, aside, footer {
+    margin: 0;
+    padding: 20px;
+    border: 1px solid #000000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    color: #fff;
+}
+
+main {
+    background: #000;
+}
+
+.header {
+    background: #03a9f4;
+}
+
+.hero {
+    background: #d22b1f;
+}
+
+.content {
+    background: #129a22;
+}
+
+.sidebar {
+    border: 1px solid #000;
+    background: #673ab7;
+}
+
+footer {
+    border: 1px solid #000;
+    background: #616161;
 }
