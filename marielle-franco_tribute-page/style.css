@@ -1,9 +1,47 @@
 body {
-    background-color: #D3FA06;
+    background-color: #F2F2F2;
+    font-family: 'Roboto', sans-serif;
 }
-
-border-color: ;
 
 div {
-    background-color: #928C6F;
+    background-color: #9CB3B3;
+    padding: 20px;
+    margin: 40px;
 }
+
+h1, h2 {
+    text-align: center;
+}
+
+h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.photo {
+    background-color: white;
+    width: 700px;
+    height: 750px;
+    display: block;
+    margin: auto;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-40%);
+    padding-left: 10px;
+}
+
+figcaption {
+    margin: 0 auto;
+    position: absolute;
+    top: 85%;
+    padding-left: 250px;
+}
+
+
