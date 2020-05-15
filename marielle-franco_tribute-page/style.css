@@ -1,6 +1,9 @@
 body {
     background-color: #F2F2F2;
     font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    font-size: 1.5rem;
 }
 
 div {
@@ -15,8 +18,17 @@ h1, h2 {
 
 h1 {
     font-size: 4rem;
-    font-weight: bold;
+    font-weight: 900;
     margin-bottom: 0;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+h3 {
+    font-size: 1.17em;
 }
 
 .photo {
@@ -41,7 +53,7 @@ figcaption {
     margin: 0 auto;
     position: absolute;
     top: 85%;
-    padding-left: 250px;
+    padding-left: 200px;
 }
 
 
