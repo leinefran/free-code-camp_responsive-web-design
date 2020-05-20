@@ -4,8 +4,6 @@ $opal: #9CB3B3; /* dominant color */
 $brown: #776551;
 $orange: #F0901E; /* accent color */
 
-/* E1D9EC */
-
 * {
   box-sizing: border-box;
 }
@@ -172,15 +170,15 @@ a:hover {
     border-radius: 6px;
 }
 
+/*
+ * MEDIA QUERIES
+ */
+
 @media screen and (max-width: 800px) {
     html, body {
         font-size: 15px;
     }
 }
-
-/*
- * Media queries
- */
 
 /* Responsive timeline on screens less than 650px wide */
 @media screen and (max-width: 650px) {
