@@ -64,16 +64,17 @@ figcaption {
     text-align: center;
 }
 
-figcaption, a {
+figcaption, .figcaption a {
     color: #776551;
     font-size: 1rem;
 }
 
 a {
     text-decoration: none;
+    color: #1D1C1E;
 }
 
-a:hover {
+.figcaption a:hover {
     font-size: 1.5rem;
 }
 
