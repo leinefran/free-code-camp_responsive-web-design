@@ -1,5 +1,5 @@
-# free-code-camp
-Store all Free Code Camp related projects
+# Free Code Camp Projects
+In this repository you'll find all my Free Code Camp related projects for the Responsive Web Design Certificate.
 
 ---
 File|Task
