@@ -1,11 +1,17 @@
-# Free Code Camp Projects
-In this repository you'll find all my Free Code Camp related projects for the Responsive Web Design Certificate.
+Marielle Franco - A Tribute Page
+
+## Description
+This project is a Tribute Page for the Politician, Feminist and Human Rights Activist Marielle Franco
+
+![Webpage Screenshoot](Marielle Franco,Presente.png)
+
 
 ---
 File|Task
 ---|---
-Responsive Web Design | In this folder you'll find small projects that I created to practice concepts I learned on Free Code Camp.
-Marielle Franco - a Tribute Page | As the name suggests, it's a Tribute Page for the sociologist, Politician and Human Rights Activist Marielle Franco
+index.html | The HTML code for the project
+style.css | The CSS style sheet
+Marielle Franco,Presente.png | A screenshoot of the Tribute Page.
 
 ## Author
 Leine Valente - [Github](https://github.com/leinefran/) || [Twitter](https://twitter.com/leinefran) || [email](leine.valente@holbertonschool.com)
