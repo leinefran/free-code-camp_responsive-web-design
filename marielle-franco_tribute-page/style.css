@@ -1,7 +1,3 @@
-* {
-  box-sizing: border-box;
-}
-
 body {
     background-color: #F2F2F2;
     font-family: 'Roboto', sans-serif;
@@ -116,7 +112,7 @@ a {
 
 /* Place the container to the left */
 .left {
-    left: 0px;
+    left: -80px;
 }
 
 /* Place the container to the right */
@@ -173,6 +169,10 @@ a {
     html, body {
         font-size: 15px;
     }
+
+	main {
+		padding: auto 50px;
+	}
 }
 
 /* Responsive timeline on screens less than 650px wide */
@@ -218,13 +218,12 @@ a {
 
 /* on screens that are 460px or less */
 @media screen and (max-width: 460px){
+	* {
+		box-sizing: border-box;
+	}
     body {
         font-size: 1rem;
         margin: 10px;
-    }
-
-    section {
-        padding: 20px;
     }
 
     h1 {
@@ -254,8 +253,13 @@ a {
 
     }
 
+	.content {
+		padding: 10px 0px;
+
+	}
+
     .left, .right {
-        left: -43px;
+        left: -3px;
     }
 
 }
