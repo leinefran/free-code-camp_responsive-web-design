@@ -8,24 +8,24 @@ body {
     color: #1D1C1E;
 }
 
-main {
+#main {
     display: block;
     background-color: #9CB3B3;
     padding: 40px;
 }
 
-h1, h2, h3 {
+#title, #tribute-info, h3 {
     text-align: center;
     color: #F2F2F2;
 }
 
-h1 {
+#title {
     font-size: 4rem;
     font-weight: 900;
     margin-bottom: 0;
 }
 
-h2 {
+#tribute-info {
     font-size: 2rem;
     font-weight: 500;
 }
@@ -40,7 +40,7 @@ h3 {
     font-weight: 500;
 }
 
-img {
+#image {
     max-width: 100%;
     display: block;
     margin: 0 auto;
@@ -49,12 +49,12 @@ img {
     background-color: #F2F2F2;
 }
 
-figcaption {
+#img-caption {
     margin: 0 auto;
     text-align: center;
 }
 
-figcaption, .figcaption a {
+#img-caption, #img-caption a {
     color: #776551;
     font-size: 1rem;
 }
@@ -64,7 +64,7 @@ a {
     color: #1D1C1E;
 }
 
-.figcaption a:hover {
+#img-caption a:hover {
     font-size: 1.5rem;
 }
 
@@ -170,8 +170,8 @@ a {
         font-size: 15px;
     }
 
-	main {
-		padding: auto 50px;
+	#main {
+		padding: 50px;
 	}
 }
 
@@ -239,11 +239,11 @@ a {
         font-size: 1rem;
     }
 
-    img {
+    #image {
         max-width: 100%;
     }
 
-    figcaption {
+    #img-caption {
         font-size: 0.8rem;
     }
 
