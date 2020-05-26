@@ -6,8 +6,8 @@ body {
 	/* "linear-gradient" adds a darken background effect to the image making the text easier to read */
 	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/intersectional-feminism.jpg');
 	background-color: #605853; /* fall-back */
-	font-size: 1rem;
-	font-family: 'Arimo', sans-serif;
+	font-size: 1.125rem;
+	font-family: 'Poppins', sans-serif;
 	margin: 140px;
 }
 
@@ -17,9 +17,49 @@ header {
 	color: #3B243E;
 }
 
-span {
-	color: #CF4011;
+#word {
+	font-size: 36px;
+	font-weight: 500;
+}
+
+h1 {
+	font-weight: 700;
+	font-size: 24px;
+	font-size: 3rem;
+	letter-spacing: 0.1rem;
+}
+
+h2 {
 	font-weight: 400;
+}
+
+p {
+	font-size: 18px;
+	font-size: 1.125rem;
+	font-weight: 400;
+}
+
+.definition {
+	font-size: 1.25rem;
+}
+
+.example {
+	font-style: italic;
+}
+
+.singular-noun {
+	font-weight: 300;
+}
+
+.divisor {
+	color: #CF4011;
+	font-size: 32px;
+	font-size: 2rem;
+	font-weight: 700;
+}
+
+.domain {
+	text-transform: uppercase;
 }
 
 section {
