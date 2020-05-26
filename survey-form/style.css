@@ -1,0 +1,55 @@
+html {
+	font-size: 100%;
+}
+
+body {
+	/* "linear-gradient" adds a darken background effect to the image making the text easier to read */
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/intersectional-feminism.jpg');
+	background-color: #605853; /* fall-back */
+	font-size: 1rem;
+	font-family: 'Arimo', sans-serif;
+	margin: 140px;
+}
+
+header {
+	background-color: #AC919C;
+	padding: 40px;
+	color: #3B243E;
+}
+
+span {
+	color: #CF4011;
+	font-weight: 400;
+}
+
+section {
+	color: #FFF;
+	background-color: #4B528A;
+	border: 40px solid rgb(75, 82, 138);
+    border: 40px solid rgba(75, 82, 138, .5);
+    -webkit-background-clip: padding-box; /* for Safari */
+    background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
+}
+
+.survey-form {
+
+	padding: 40px;
+}
+
+.survey-form h1 {
+	text-align: center;
+}
+
+/*
+ *
+ * MEDIA QUERIES
+ *
+ */
+
+/* on screens that are 460px or less */
+@media screen and (max-width: 460px){
+	body {
+		background-color: #605853;
+		margin: 0;
+	}
+}
