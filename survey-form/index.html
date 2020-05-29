@@ -35,6 +35,7 @@
 			<section>
 				<div class="survey-form">
 					<h1 id='title'>Are You A Feminist?</h1>
+					<p id="description">Thank you for taking the time to help us understand what is feminism for you</p>
 
 					<form id="survey-form">
 						<!-- name -->
@@ -45,12 +46,12 @@
 						<!-- email -->
 						<div class="form-group">
 							<label for="email" id="email-label">Email</label><br>
-							<input type="text" id="email" name="email" class="form-control" placeholder="Enter your email" required="">
+							<input type="email" id="email" name="email" class="form-control" placeholder="Enter your email" required="">
 						</div>
 						<!-- age -->
 						<div class="form-group">
-							<label for="age" id="age-label">Age</label><br>
-							<input type="text" id="age" name="age" class="form-control" placeholder="Age" required="">
+							<label for="age" id="number-label">Age</label><br>
+							<input type="number" min="10" max="110" id="number" name="age" class="form-control" placeholder="Age" required="">
 						</div>
 						<!-- gender -->
 						<div class="form-group">
