@@ -6,22 +6,27 @@
 		<meta name='description' content='A survey form about free code camp'/>
 		<title>FCC: Survey Form</title>
 		<link href='style.css' rel='stylesheet'/>
-		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;700;900&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;700&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
 		<!-- free code camp test suit -->
 		<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 	</head>
 	<body>
 		<!-- header -->
 		<header>
+			<hr>
 			<h1  id="word">feminism</h1>
-			<h2>
+			<p id="thekind">
 			<span class="grammar">noun</span>
-			<span class="singular-noun"> [ U ] </span><span class="divisor">.</span>
+			<span class="singular-noun"> [ U ] </span>
+			<span class="divisor">.</span>
 			<span class="domain">politics</span>
-			</h2>
-			<p class="definition">the belief that women should be allowed the same rights, power, and opportunities as men and be treated in the same way, or the set of activities intended to achieve this state:
-			<p>She had a lifelong commitment to feminism.</p>
+			</p>
+			<hr>
+			<p class="definition">the belief that women should be allowed the same rights, power, and opportunities as men and be treated in the same way, or the set of activities intended to achieve this state
+			<p class="example">She had a lifelong commitment to feminism.</p>
 			<p class="definition">an organized effort to give women the same economic, social, and political rights as men</p>
+			<p class="example">In the 19th century, feminists argued that women should be allowed to vote.</p>
 		</header>
 
 		<!-- main -->
@@ -30,12 +35,81 @@
 			<section>
 				<div class="survey-form">
 					<h1 id='title'>Are You A Feminist?</h1>
-					<p id="description"></p>
+
 					<form id="survey-form">
-  						<label for="name" id="name-label">Name</label><br>
-  						<input type="text" id="name" name="name"><br>
-  						<label for="email" id="email-label">Email</label><br>
-  						<input type="text" id="email" name="email"><br>
+						<!-- name -->
+						<div class="form-group">
+							<label for="name" id="name-label">Name</label><br>
+							<input type="text" id="name" name="name" class="form-control" placeholder="Enter your name" required="">
+						</div>
+						<!-- email -->
+						<div class="form-group">
+							<label for="email" id="email-label">Email</label><br>
+							<input type="text" id="email" name="email" class="form-control" placeholder="Enter your email" required="">
+						</div>
+						<!-- age -->
+						<div class="form-group">
+							<label for="age" id="age-label">Age</label><br>
+							<input type="text" id="age" name="age" class="form-control" placeholder="Age" required="">
+						</div>
+						<!-- gender -->
+						<div class="form-group">
+							<p>Gender</p>
+							<input type="radio" id="male" name="gender" value="male" class="input-radio">
+							<label for="male">Male</label>
+							<input type="radio" id="female" name="gender" value="female" class="input-radio">
+							<label for="female">Female</label>
+							<input type="radio" id="other" name="gender" value="other" class="input-radio">
+							<label for="other">Other :</label>
+							<input type="text" id="other" name="gender" class="input-radio"><br>
+							</div>
+						<!-- occupation -->
+						<div class="form-group">
+							<p>Which option best describes your current role?</p>
+							<select id="dropdown" name="occupation" class="form-control">
+								<option disabled="" selected="" value="">Select current role</option>
+								<option value="student">Student</option>
+								<option value="fulltime">Full Time Job</option>
+								<option value="parttime">Part Time Job</option>
+								<option value="self">Self-employee</option>
+							</select>
+						</div>
+						<!-- to be added:
+										economic background
+										education
+										race
+										religion
+						-->
+						<!-- are you a feminist? -->
+						<div class="form-group">
+							<p>Do you consider yourself a feminist?</p>
+							<input type="radio" id="yes" name="yes" value="yes" class="input-radio">
+							<label for="yes">yes</label>
+							<input type="radio" id="no" name="no" value="no" class="input-radio">
+							<label for="no">no</label>
+						</div>
+						<!-- books -->
+						<div class="form-group">
+							<p id="books">Have you ever read any of these feminist books? Mark all that applies.</p>
+							<input type="checkbox" class="input-checkbox" name="books" value="A Vindication of the Rights of Woman, by Mary Wollstonecraft">
+							<label for="books">A Vindication of the Rights of Woman, by Mary Wollstonecraft</label><br>
+							<input type="checkbox" class="input-checkbox" name="books" value="The Second Sex, by Simone de Beauvoir">
+							<label for="books">The Second Sex, by Simone de Beauvoir</label><br>
+							<input type="checkbox" class="input-checkbox" name="books" value="Feminism is for Everybody, by Bell Hooks">
+							<label for="books">Feminism is for Everybody, by Bell Hooks</label><br>
+							<!-- more books to be added later -->
+						</div>
+						<!-- how feminism? -->
+						<div class="form-group">
+							<p>How do you exercise feminism in your life?</p>
+							<textarea id="answer" class="input-textarea" name="comment" placeholder="Enter your answer here..."></textarea>
+						</div>
+						<!-- submit button -->
+						<div class="form-group">
+							<button type="submit" id="submit" class="submit-button">
+							Submit
+							</button>
+						</div>
 					</form>
 				</div>
 
