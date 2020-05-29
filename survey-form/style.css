@@ -8,6 +8,7 @@
 	--color-deep-lilac: #EEE3EB;
 	--color-light-gray: #CED4DA;
 	--color-light-blue: #4B528A;
+	--color-translucid-light-blue: rgba(75, 82, 138, .1);
     --color-darkblue: #08083A;
     --color-darkblue-alpha: rgba(8,8,58,0.15);
     --color-deep-purple: #3B243E;
@@ -106,7 +107,7 @@ p {
 
 section {
 	color: var(--color-white);
-	background-color: var(--color-light-blue);
+	background-color: var(--color-translucid-light-blue);
 	border: 40px solid rgb(75, 82, 138); /* for browsers that don't support border opacity */
     border: 40px solid rgba(75, 82, 138, .5); /* transparent border */
     -webkit-background-clip: padding-box; /* for Safari */
@@ -189,6 +190,3 @@ input, button, select, textarea {
 		margin: 0;
 	}
 }
-
-
-rgba(75, 82, 138, .1)
