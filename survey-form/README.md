@@ -37,5 +37,8 @@ index.html | The HTML code for the project
 style.css | The CSS style sheet
 images | A folder with all the images used in the project
 
+## Image Credit
+Background image by Angelina Bambina - [Webpage](https://linktr.ee/angelinabambina) || [Instagram](https://www.instagram.com/angelina_bambina_dsgn/)
+
 ## Author
 Leine Valente - [Github](https://github.com/leinefran/) || [Twitter](https://twitter.com/leinefran) || [email](leine.valente@holbertonschool.com)
