@@ -39,7 +39,7 @@ hr {
 	border-radius: 5px;
 }
 
-#word {
+h1 #word {
 	font-size: 3rem;
 	font-size: 30px;
 	font-weight: 500;
@@ -47,41 +47,43 @@ hr {
 	padding: 0;
 }
 
-#thekind {
+p #thekind {
 	margin-top: 0;
 }
 
-.grammar {
+span.grammar {
 	font-weight: 600;
 }
 
-.singular-noun {
+span.singular-noun {
 	font-weight: 300;
 }
 
-.divisor {
+span.divisor {
 	color: var(--color-orange);
 	font-size: 2rem;
 	font-size: 32px;
 	font-weight: 700;
 }
 
-.domain {
+span.domain {
 	text-transform: uppercase;
 }
 
-.definition {
+p.definition {
 	font-size: 2rem;
 	font-size: 20px;
 	font-weight: 500;
 }
 
-.example {
+p.example {
 	font-style: italic;
 	text-indent: 1.5em;
 }
 
+/* h1 tag with id "title" */
 #title {
+	margin-bottom: 1rem;
 	font-weight: 700;
 	font-size: 6rem;
 	font-size: 60px;
@@ -91,12 +93,18 @@ hr {
 
 }
 
+/* p tag with id "description" */
+#description {
+	margin-bottom: 3rem;
+	text-align: center;
+}
+
 h2 {
 	font-weight: 400;
 }
 
 body, p {
-	font-size: 2rem; /* =18px */
+	font-size: 2rem; /* =20px */
 	font-size: 20px; /* fall back */
 	font-weight: 400;
 }
@@ -122,10 +130,6 @@ section {
 	text-align: center;
 }
 
-label {
-    margin-bottom: 0.5rem;
-}
-
 .form-group {
     margin: 0 auto 1.25rem auto;
     padding: 0.25rem;
@@ -135,6 +139,7 @@ label {
     display: block;
     width: 100%;
     height: 5rem;
+	margin-top: 1rem;
     padding: 0.375rem 0.75rem;
     color: var(--color-brown);
     background-color: var(--color-white);
@@ -143,6 +148,15 @@ label {
     border-radius: 0.25rem;
     transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 
+}
+
+#female, #other, #no {
+	margin-left: 10px;
+}
+
+#other-type-text {
+	margin-top: 10px;
+	box-sizing: border-box;
 }
 
 input, button, select, textarea {
@@ -157,6 +171,7 @@ input, button, select, textarea {
     margin-right: 0.625rem;
     min-height: 1.25rem;
     min-width: 1.25rem;
+	padding: 1rem;
 }
 
 .input-textarea {
@@ -183,10 +198,39 @@ input, button, select, textarea {
  *
  */
 
-/* on screens that are 460px or less */
-@media screen and (max-width: 460px){
+@media screen and (min-width: 300px){
 	body {
 		background-color: #605853;
-		margin: 0;
+		margin: 0px;
+		font-size: 100%;
+	}
+
+	p, p.definition {
+		font-size: 1em;
+	}
+
+	#title {
+		font-size: 1.250em !important;
+	}
+
+	.form-control{
+		height: 3rem;
+	}
+
+}
+
+@media screen and (min-width: 700px) and (max-width: 800px){
+	body {
+		margin: 50px;
+	}
+
+	body, p {
+		font-size: 1.6rem;
+		font-size: 16px;
+	}
+
+	#title {
+		font-size: 4rem;
+		font-size: 40px;
 	}
 }
