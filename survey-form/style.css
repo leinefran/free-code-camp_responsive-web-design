@@ -198,7 +198,7 @@ input, button, select, textarea {
  *
  */
 
-@media screen and (min-width: 300px){
+@media screen and (min-width: 300px) and (max-width: 699px){
 	body {
 		background-color: #605853;
 		margin: 0px;
