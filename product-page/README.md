@@ -1,4 +1,4 @@
-# Survey Form
+# PRODUCT PAGE
 
 ## Description
 This project is a product page for the Nike Air Max 90, and it's part of the Responsive Web Design Projects for the Free Code Camp Certification.
