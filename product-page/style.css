@@ -1,0 +1,35 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%; /* =10px */
+}
+
+body {
+	background-color: #EFDCDE;
+	font-family: 'Muli', sans-serif;
+}
+
+.nav-link {
+	color: white;
+}
+
+h1 {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 900;
+	font-size: 5rem;
+	font-size: 50px;
+	text-transform: uppercase;
+	letter-spacing: 0.2rem;
+	color: #3B243E;
+	text-align: center;
+}
+
+img {
+	max-width: 100%;
+}
+
+footer {
+	background-color: #CF4011;
+}
