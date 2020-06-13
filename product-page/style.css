@@ -378,7 +378,6 @@ body {
 }
 
 #header {
-	/* background-color: #DDC0BB; */
 	padding-bottom: 20px;
 }
 
@@ -393,14 +392,13 @@ body {
 }
 
 /* Change link background color when active */
-.nav-link:active,
-.nav-links:active,{
-	background-color: #CF4011;
+a:active {
+	color: var(--pink);
 }
 
 /* Change link text color on hoover */
-.nav-link:hoover {
-	color: #CF4011;
+a:hoover {
+	color: var(--orange);
 }
 
 ul {
@@ -413,6 +411,7 @@ li {
   float: right;
 }
 
+/* eliminate the space between the main and the footer */
 main {
 	overflow: hidden;
 }
@@ -516,10 +515,6 @@ label {
 * {
     -ms-content-zooming: none;
 }
-user agent stylesheet
-select:not(:-internal-list-box) {
-    overflow: visible !important;
-}
 
 .design h3,
 .design p,
@@ -535,3 +530,23 @@ select:not(:-internal-list-box) {
 footer {
 	background-color: #CF4011;
 }
+
+#form {
+	padding-right: 10px;
+}
+
+form, #form p {
+	color: white;
+
+}
+
+.email {
+	margin-bottom: 10px;
+}
+
+#email {
+	width: 100%;
+	margin-top: 10px;
+}
+
+
