@@ -23,29 +23,33 @@
 				</ul>
 			</nav>
 		</header>
-		<main>
-			<!-- PRODUCT NAME AND IMAGE -->
-			<section>
-				<h1 class='product-title'>AIR MAX 90</h1>
-				<img src='images/airMax-main(small).jpg' alt='A picture of the Air Max 90' class='product-img'/>
-			</section>
-			<!-- PRODUCT INFO AND PRICE -->
-			<section class="shop">
-				<h3><a name='shop'>Women's Shoe</a></h3>
-				<p>$120</p>
-				<a>Free Shipping & Returns*</a>
-				<div class="color">
-					<label for="colourSelect" class="disabled" data-bind="text: colourLabel, visible: !hideLabels">COLOR:</label>
-					<span class="product-colour" data-bind="visible: colourLabelVisible(), text: selectedColourLabel(), css: { disabled: isDisabled }">Multi</span>
-				</div>
-				<div>
-					<label for="sizeSelect" style="display: table-cell; vertical-align: bottom" data-bind="text: sizeLabel, visible: !hideLabels, disable: isDisabled">SIZE:</label>
-					<select id="sizeSelect">
+		<main class="content">
+			<div class="container">
+				<!-- PRODUCT NAME AND IMAGE -->
+				<section class="theProduct">
+					<h1 class='product-title'>AIR MAX 90</h1>
+					<img src='images/airMax-main(small).jpg' alt='A picture of the Air Max 90' class='product-img'/>
+				</section>
+				<!-- PRODUCT INFO AND PRICE -->
+				<section class="shop">
+					<h3><a name='shop'>Women's Shoe</a></h3>
+					<p>$120</p>
+					<a>Free Shipping & Returns*</a>
+					<div class="color">
+						<label for="colourSelect" class="disabled" data-bind="text: colourLabel, visible: !hideLabels">COLOR:</label>
+						<span class="product-colour" data-bind="visible: colourLabelVisible(), text: selectedColourLabel(), css: { disabled: isDisabled }">Multi</span>
+					</div>
+					<div>
+						<label for="sizeSelect" style="display: table-cell; vertical-align: bottom" data-bind="text: sizeLabel, visible: !hideLabels, disable: isDisabled">SIZE:</label>
+						<select id="sizeSelect">
                         	<option value="">Please select</option>
-                            <option value="">US 6</option><option value="">US 6.5</option><option value="">US 7</option><option value="">US 7.5</option><option value="">US 8</option><option value="">US 8.5</option><option value="">US 9</option><option value="">US 9.5</option><option value="">US 10</option><option value="">US 10.5</option><option value="">US 11</option><option value="">US 11.5</option><option value="">US 12</option><option value="">US 12.5</option><option value="">US 13</option><option value="">US 14</option></select>
-				</div>
-				<p><button>Add to Cart</button></p>
-			</section>
+                            <option value="">US 6</option><option value="">US 6.5</option><option value="">US 7</option><option value="">US 7.5</option><option value="">US 8</option><option value="">US 8.5</option><option value="">US 9</option><option value="">US 9.5</option><option value="">US 10</option><option value="">US 10.5</option><option value="">US 11</option><option value="">US 11.5</option><option value="">US 12</option><option value="">US 12.5</option><option value="">US 13</option><option value="">US 14</option>
+						</select>
+					</div>
+					<p><button>Add to Cart</button></p>
+				</section>
+			</div>
+
 			<!-- DESIGN -->
 			<section class='design'>
 				<h2><a name='design'>HERITAGE STYLE. MODERN COMFORT.</a></h2>
