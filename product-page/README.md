@@ -35,6 +35,7 @@ File|Task
 index.html | The HTML code for the project
 style.css | The CSS style sheet
 images | A folder with all the images used in the project
+README.md | The project's documentation
 
 ## Image Credit
 Background image by Malvestida Magazine - [Unsplash](https://unsplash.com/@malvestida?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
