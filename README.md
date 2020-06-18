@@ -6,6 +6,7 @@ File|Task
 ---|---
 responsive-web-design | A folder with small projects created to practice responsive web design concepts
 marielle-franco_tribute-page | A Tribute Page for Politician, Feminist and Human Rights Activist Marielle Franco
+product-page | A product page for the Nike Air Max 90
 
 ## Author
 Leine Valente - [Github](https://github.com/leinefran/) || [Twitter](https://twitter.com/leinefran) || [email](leine.valente@holbertonschool.com)
