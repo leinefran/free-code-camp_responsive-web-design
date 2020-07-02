@@ -4,23 +4,28 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Styling -->
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"/>
   <!-- Title -->
   <title>JS String Methods</title>
   <!-- free code camp test suit -->
   <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  <!-- Highlight JS-->
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.0/styles/default.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
 </head>
 <body>
   <nav id="navbar">
     <div class="sidebar">
       <ul>
-        <h1>JS String Methods</h1>
+        <header><h1>JS String Methods</h1></header>
         <a href="#methods-and-properties">String Methods and Properties</a>
         <a href="#string-length">String Length</a>
         <a href="#finding">Finding a String in a String</a>
         <a href="#searching">Searching for a String in a String</a>
-        <a href="#extracting">Searching for a String in a String</a>
+        <a href="#extracting">Extracting String Parts</a>
       </ul>
     </div>
   </nav>
@@ -39,28 +44,217 @@
       <section class="main-section" id="String_Length">
         <header>
           <h2><a id="string-length">String Length</a></h2>
+          <p>The <span>length</span> property returns the length of a string:</p>
+          <h3 class="example">Example</h3>
+          <pre><code class="JavaScript">
+            var txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+            var sln = txt.length;
+          </code></pre>
+          <h3 class="output">Output</h3>
+          <pre><code class="JavaScript">
+            The length property returns the length of a string:
+            26
+          </code></pre>
         </header>
       </section>
       <!-- Finding a String in a String -->
       <section class="main-section" id="Finding_a_String_in_a_String">
         <header>
           <h2><a id="finding">Finding a String in a String</a></h2>
+          <!-- indexOf() -->
+          <p class="method-definition">The <span>indexOf( )</span> method returns the index of (the position of) the first occurrence of a specified text in a string:</p>
+          <h3>Example</h3>
+          <pre><code class="JavaScript">
+            var str = "Please locate where 'locate' occurs!";
+            var pos = str.indexOf("locate");
+          </code></pre>
+          <h3 class="output">Output</h3>
+          <pre><code class="JavaScript">
+            The indexOf() method returns the position of the first occurrence of a specified text:
+            7
+          </code></pre>
+          <!-- a highlight -->
+          <div class="highlight">
+            <p>JavaScript counts positions from zero.
+              0 is the first position in a string, 1 is the second, 2 is the third ...</p>
+          </div><!-- end highlight-->
+          <!-- lastIndexOf() -->
+          <p class="method-definition extra-info">The <span>lastIndexOf( )</span> method returns the index of the last occurrence of a specified text in a string:</p>
+          <h3>Example</h3>
+          <pre><code class="JavaScript">
+            var str = "Please locate where 'locate' occurs!";
+            var pos = str.lastIndexOf("locate");
+          </code></pre>
+          <h3 class="output">Output</h3>
+          <pre><code class="JavaScript">
+            21
+          </code></pre>
+
+          <p class="method-definition extra-info">Both <span>indexOf( )</span>, and <span>lastIndexOf( )</span> return -1 if the text is not found.</p>
+          <h3>Example</h3>
+          <pre><code class="JavaScript">
+            var str = "Please locate where 'locate' occurs!";
+            var pos = str.lastIndexOf("John");
+          </code></pre>
+          <h3 class="output">Output</h3>
+          <pre><code class="JavaScript">
+            -1
+          </code></pre>
+
+          <p class="method-definition extra-info">Both methods accept a second parameter as the starting position for the search:</p>
+          <h3>Example</h3>
+          <pre><code class="JavaScript">
+            var str = "Please locate where 'locate' occurs!";
+            var pos = str.indexOf("locate", 15);
+          </code></pre>
+          <h3 class="output">Output</h3>
+          <pre><code class="JavaScript">
+            21
+          </code></pre>
+
+          <p class="method-definition extra-info">The <span>lastIndexOf( )</span> methods searches backwards (from the end to the beginning), meaning: if the second parameter is 15, the search starts at position <span>15</span>, and searches to the beginning of the string.</p>
+          <h3>Example</h3>
+          <pre><code class="JavaScript">
+            var str = "Please locate where 'locate' occurs!";
+            var pos = str.lastIndexOf("locate", 15);
+          </code></pre>
+          <h3 class="output">Output</h3>
+          <pre><code class="JavaScript">
+            7
+          </code></pre>
         </header>
       </section>
       <!-- Searching for a String in a String -->
       <section class="main-section" id="Searching_for_a_String_in_a_String">
         <header>
           <h2><a id="searching">Searching for a String in a String</a></h2>
+          <p class="method-definition">The search( ) method searches a string for a specified value and returns the position of the match:</p>
+          <h3>Example</h3>
+          <pre><code class="JavaScript">
+            var str = "Please locate where 'locate' occurs!";
+            var pos = str.search("locate");
+          </code></pre>
+          <h3 class="output">Output</h3>
+          <pre><code class="JavaScript">
+            7
+          </code></pre>
+          <!-- a highlight -->
+          <div class="highlight">
+            <p>The two methods, <span>indexOf( )</span> and <span>search( )</span>, accept the same arguments (parameters), and return the same value. However, they are not equal. </p>
+            <p>Here are the differences:</p>
+            <ul class="list-highlight">
+                <li>The <span>search( )</span> method cannot take a second start position argument.</li>
+                <li>The <span>indexOf( )</span> method cannot take powerful search values (regular expressions).</li>
+            </ul>
+          </div><!-- end highlight-->
         </header>
       </section>
       <!-- Extracting String Parts -->
-      <section class="main-section">
+      <section class="main-section" id="last-section">
         <header>
           <h2><a id="extracting">Extracting String Parts</a></h2>
+          <p class="method-definition">There are 3 methods for extracting a part of a string:</p>
+          <ul class="extracting">
+            <li>slice(start, end)</li>
+            <li>substring(start, end)</li>
+            <li>substr(start, length)</li>
+        </ul>
+
+        <!-- slice -->
+        <p class="method-definition extra-info"> The <span>slice( )</span> method extracts a part of a string and returns the extracted part in a new string.</p>
+        <p>The method takes 2 parameters: the start position, and the end position (end not included). This example slices out a portion of a string from position 7 to position 12 (13-1):</p> 
+        <h3>Example</h3>
+        <pre><code class="JavaScript">
+          var str = "Apple, Banana, Kiwi";
+          var res = str.slice(7, 13);
+        </code></pre>
+        <h3 class="output">Output</h3>
+        <pre><code class="JavaScript">
+          Banana
+        </code></pre>
+
+        <p class="method-definition extra-info">If a parameter is negative, the position is counted from the end of the string. This example slices out a portion of a string from position -12 to position -6:</p>
+        <h3>Example</h3>
+        <pre><code class="JavaScript">
+          var str = "Apple, Banana, Kiwi";
+          var res = str.slice(-12, -6);
+        </code></pre>
+        <h3 class="output">Output</h3>
+        <pre><code class="JavaScript">
+          Banana
+        </code></pre>
+
+        <p class="method-definition extra-info">If you omit the second parameter, the method will slice out the rest of the string:</p>
+        <h3>Example</h3>
+        <pre><code class="JavaScript">
+          var str = "Apple, Banana, Kiwi";
+          var res = str.slice(7);
+        </code></pre>
+        <h3 class="output">Output</h3>
+        <pre><code class="JavaScript">
+          Banana, Kiwi
+        </code></pre>
+
+        <p class="method-definition extra-info">or, counting from the end:</p>
+        <h3>Example</h3>
+        <pre><code class="JavaScript">
+          var str = "Apple, Banana, Kiwi";
+          var res = str.slice(-12);
+        </code></pre>
+        <h3 class="output">Output</h3>
+        <pre><code class="JavaScript">
+          Banana, Kiwi
+        </code></pre>
+
+        <!-- substring -->
+        <p class="method-definition extra-info"> The <span>substring( )</span> method is similar to the <span>slice( )</span> method. The difference is that it cannot accept negative indexes.</p>
+        <h3>Example</h3>
+        <pre><code class="JavaScript">
+          var str = "Apple, Banana, Kiwi";
+          var res = str.substring(7, 13);
+        </code></pre>
+        <h3 class="output">Output</h3>
+        <pre><code class="JavaScript">
+          Banana
+        </code></pre>
+        <p>If you omit the second parameter, <span>substring( )</span> will slice out the rest of the string.</p>
+
+        <!-- substr -->
+        <p class="method-definition extra-info">The <span>substr( )</span> is similar to the <span>slice( )</span> method. The difference is that the second parameter specifies the <span>length</span> of the extracted part.</p>
+        <h3>Example</h3>
+        <pre><code class="JavaScript">
+          var str = "Apple, Banana, Kiwi";
+          var res = str.substr(7, 6);
+        </code></pre>
+        <h3 class="output">Output</h3>
+        <pre><code class="JavaScript">
+          Banana
+        </code></pre>
+
+        <p class="method-definition extra-info">If you omit the second parameter, <span>substr()</span> will slice out the rest of the string.</p>
+        <h3>Example</h3>
+        <pre><code class="JavaScript">
+          var str = "Apple, Banana, Kiwi";
+          var res = str.substr(7);
+        </code></pre>
+        <h3 class="output">Output</h3>
+        <pre><code class="JavaScript">
+          Banana, kiwi
+        </code></pre>
+
+        <p class="method-definition extra-info">If the first parameter is negative, the position counts from the end of the string.</p>
+        <h3>Example</h3>
+        <pre><code class="JavaScript">
+          var str = "Apple, Banana, Kiwi";
+          var res = str.substr(-4);
+        </code></pre>
+        <h3 class="output">Output</h3>
+        <pre><code class="JavaScript">
+          kiwi
+        </code></pre>
         </header>
       </section>
     </div>
   </main>
-  
 </body>
 </html>
