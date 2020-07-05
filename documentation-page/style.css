@@ -106,7 +106,7 @@ header h2 {
 }
 
 header h2,
-header h3,
+h3,
 p, pre {
   margin-left: 20px;
   margin-right: 20px;
@@ -149,7 +149,7 @@ div .highlight {
   padding-top: 40px;
 }
 
-#last-section {
+#Extracting_String_Parts {
   margin-bottom: 60px;
 }
 
