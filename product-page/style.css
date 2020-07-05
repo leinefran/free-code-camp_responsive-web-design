@@ -382,7 +382,10 @@ body {
  */
 
 #header {
-	padding-bottom: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  position: fixed;
+  top: 0;
 }
 
 #header-img {
