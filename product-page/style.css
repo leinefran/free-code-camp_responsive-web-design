@@ -385,6 +385,11 @@ body {
 	padding-bottom: 20px;
 }
 
+#header-img {
+  max-width: 5%;
+  margin-top: 5px;
+}
+
 .nav-links, .nav-link {
 	list-style-type: none; /* eliminate the bullet points */
 	display: block;
@@ -559,6 +564,28 @@ form, #form p {
 #email {
 	width: 100%;
 	margin-top: 10px;
+}
+
+.btn {
+  margin-top: .75rem;
+  display: block;
+  font-size: 14px;
+  letter-spacing: 1px;
+  padding: 0.4rem 5.4rem;
+  border-radius: 4px;
+  color: white;
+  background: #556481;
+  border: 1px solid #556481;
+  box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.4);
+}
+
+.btn:hover {
+  background-color: #4b5872;
+}
+
+.btn:active {
+  background-color: #4b5872;
+  transform: translateY(3px);
 }
 
 @media screen and (min-width: 850px) {
