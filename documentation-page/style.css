@@ -174,11 +174,14 @@ div .highlight {
 }
 
 /* On screens that are less than 400px, display the bar vertically, instead of horizontally */
-@media screen and (max-width: 400px) {
-  .sidebar a {
-    text-align: center;
+@media screen and (max-width: 415px) {
+  .sidebar h1, .sidebar a {
+    text-align: left;
     float: none;
+    padding-left: 35px;
   }
-
+  #String_Methods_and_Properties h2 {
+    margin-top: 30px;
+  }
 }
 
