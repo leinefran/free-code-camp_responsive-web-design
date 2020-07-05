@@ -353,7 +353,7 @@ template {
  */
 
 :root {
-    --white: #F2F2F2;
+  --white: #F2F2F2;
 	--silver-pink: #D7B4AE;
 	--coper-penny: #AE675B;
 	--purple: #7F00FF;
@@ -388,6 +388,9 @@ body {
 #header-img {
   max-width: 5%;
   margin-top: 5px;
+  float: left;
+  padding-left: 10px;
+  text-align: center;
 }
 
 .nav-links, .nav-link {
@@ -574,8 +577,8 @@ form, #form p {
   padding: 0.4rem 5.4rem;
   border-radius: 4px;
   color: white;
-  background: #556481;
-  border: 1px solid #556481;
+  background: var(--acqua-blue);
+  border: 1px solid var(--acqua-blue);
   box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.4);
 }
 
