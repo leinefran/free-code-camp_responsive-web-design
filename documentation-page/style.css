@@ -49,6 +49,10 @@ img {
   The side navigation menu 
   *********** */
 
+#navbar {
+  position:fixed;
+}
+
 .sidebar {
   margin: 0;
   padding: 0;
