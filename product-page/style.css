@@ -396,6 +396,10 @@ body {
   text-align: center;
 }
 
+#navbar {
+  position:fixed;
+}
+
 .nav-links, .nav-link {
 	list-style-type: none; /* eliminate the bullet points */
 	display: block;
