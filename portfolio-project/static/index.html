@@ -22,7 +22,8 @@
     <![endif]-->
     <header>
       <div class="container">
-        <img src="/static/images" alt="" class="logo">
+        <!-- <img src="/static/images" alt="" class="logo"> -->
+        <p class="logo">Logo</p>
         <div class="nav-right">
           <nav id="navbar">
             <!-- User Story #7: The navbar should contain at least one link that I can click on to navigate to different sections of the page. -->
@@ -43,11 +44,11 @@
           <h1>Hello, my name is Leine. I am a Designer / Front End Developer living in Alameda, CA.</h1>
           <!-- <img src="" alt="" id="profile-img"> -->
           <!-- About -->
-          <h3>About:</h3>
+          <h3 class="about">About:</h3>
             <p>I am currently  working as a freelancer UX Engineer, and I'm passionate about all things design. My most recent project is a web application to help female jiu-jitsu practitioners to find a safe and welcoming place to train.</p>
             <p>Outside of work, I spend most of my free time practicing brazilan jiu-jitsu, reading or caring for indoor plants. Occasionally I like watching movies and talking about them. When it's nice outside, I go for a good hike or swim. And in case you were wondering, my first name is pronounced LAY-nee.</p>
           <!-- Services -->
-          <h3>Services:</h3>
+          <h3 class="services">Services:</h3>
             <h4>UI/UX DESIGN</h4>
               <p>UI/UX involves planning and iterating a site's structure and layout. Once the proper information architecture is in place, I design the visual layer to create a beautiful user experience.</p>
             <h4>FRONT END DEVELOPMENT</h4>
@@ -56,7 +57,9 @@
       </section>
       <!-- Projects -->
       <section id="projects">
-        <h2>Here are some projects I have developed</h2>
+        <div class="heading">
+          <h2>Here are some projects I have developed</h2>
+        </div>
         <!-- User Story #4: The projects section should contain at least one element with a class of project-tile to hold a project.
         User Story #5: The projects section should contain at least one link to a project. -->
           <div class="container">
@@ -69,9 +72,11 @@
       </section>
       <!-- Social Media -->
       <section id="social-media">
-        <h2>Let's connect!</h2>
+        <div class="heading">
+          <h2>Let's connect!</h2>
+        </div>
         <!-- My portfolio should have a link with an id of profile-link, which opens my GitHub or FCC profile in a new tab. -->
-        <div class="social-media">
+        <div class="container social-media">
           <ul class="nav-list">
               <li>
                   <a href="https://linkedin.com/in/leinevalente" class="icon-link" target="_blank">
