@@ -14,6 +14,7 @@ The navbar should always be at the top of the viewport.
 html {
   font-size: 62.5%; /* =10px */
   font-family:"Lato", sans-serif;
+  font-weight: 300;
   color: #454343; /* graphite */
 }
 
@@ -35,15 +36,24 @@ a {
 p {
   font-size: 1.8rem;
   font-weight: 300;
+  padding-bottom: 1rem;
 }
 
 img {
   width: 100%;
 }
 
+ul {
+  list-style-type: none;
+}
+
+li {
+  display: inline;
+}
 /*End global*/
 
 /*Start reusable*/
+.heading, 
 .container {
   width: 90%;
   max-width: 120rem;
@@ -52,7 +62,61 @@ img {
   position: relative;
 }
 
-/* Welcome-Section */
+h2 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 2rem;
+  padding-bottom: 2.5rem;
+}
+
+h4 {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  color: #5D1A49;
+  padding-bottom: 1.5rem;
+}
+/* End reusable */
+
+/* Start Header */
+header {
+  width: 100%;
+  font-size: 1.6rem;
+  margin-top: 20px 
+}
+
+header .container {
+  display: grid;
+  grid-template-columns: [logo] 1fr [menu] 2fr;
+  grid-template-rows: auto;
+  grid-template-areas: "logo menu"; 
+  justify-items: flex-start; /* aligns along the inline (row) axis) */
+  align-items: center; /* align grid items along the block (column) axis */
+  justify-content: space-between;
+  align-content: center;
+}
+
+p .logo {
+  grid-column: 1/2;
+  grid-area: logo;
+}
+
+#nav-right {
+  grid-column: 2/span 3;
+  grid-area: menu;
+}
+
+ul li {
+  padding: 1rem;
+}
+/* End Header */
+
+/********************
+start welcome-section
+*********************/
+
+/* Start about */
 #welcome-section h1 {
   text-align: center;
   /* margin-top: 10rem; */
@@ -61,11 +125,11 @@ img {
   font-weight: 300;
 }
 
-.section-heading h1 {
-  font-size: 3.5rem;
-  color: rgba(255, 255, 255, .3);
-  text-transform: uppercase;
-  font-weight: 300;
-  position: relative;
-  margin-bottom: 1rem;
+.about p:last-child {
+  padding-bottom: 2.5rem;
 }
+/* End about */
+
+/******************
+End welcome section
+******************/
