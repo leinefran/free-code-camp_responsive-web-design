@@ -1,0 +1,292 @@
+/* 
+User Story #9: My portfolio should have at least one media query. 
+The height of the welcome section should be equal to the height of the viewport.
+The navbar should always be at the top of the viewport.
+*/
+
+/**************
+  Start global
+  ************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%; /* =10px */
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  color: #454343; /* graphite */
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #f9f8f1; /* off-white */
+  border: 10px solid #5d1a49;
+}
+
+section {
+  padding: 2rem 0;
+}
+
+a {
+  text-decoration: none;
+  color: #231e51; /* royal blue */
+}
+
+p {
+  font-size: 1.8rem;
+  font-weight: 300;
+  padding-bottom: 2.5rem;
+}
+
+img {
+  width: 100%;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  display: inline;
+}
+/************
+  End global
+  ***********/
+
+/****************
+  Start reusable
+  ***************/
+.container {
+  width: 90%;
+  max-width: 120rem;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.heading {
+  margin-top: 3.5rem;
+}
+
+.heading h2 {
+  font-size: 2.5rem;
+  font-weight: 300;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 6.5rem;
+}
+
+/************** 
+  End reusable
+  *************/
+
+/************** 
+  Start Header
+  *************/
+header {
+  width: 100%;
+  font-size: 1.6rem;
+}
+
+header .container {
+  display: flex;
+  align-items: center; /* align items along cross axis */
+  justify-content: space-between; /* alignment along the main axis */
+  align-content: center;
+}
+
+p .logo {
+  align-self: center;
+  margin-top: 6rem;
+}
+
+#nav-right {
+  align-self: center;
+}
+
+#navbar {
+  margin-top: 6rem;
+}
+
+.nav-link {
+  margin: 1rem;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  border-bottom: 2px solid #5d1a49;
+  margin: 0 1rem 0 1rem;
+}
+
+/************
+  End Header
+  ***********/
+
+/********************
+start welcome-section
+*********************/
+
+#welcome-section h1 {
+  text-align: center;
+  margin: 10rem 15rem 10rem 15rem;
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+#welcome-section h3 {
+  font-size: 2rem;
+  padding-bottom: 2.5rem;
+  font-weight: 400;
+}
+
+#welcome-section h4 {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  color: #5d1a49;
+  padding-bottom: 1.5rem;
+}
+/******************
+End welcome section
+******************/
+
+/***********************
+  Start Project section
+  **********************/
+  
+  .portfolio-description h2 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: #2e2e2e;
+    padding-bottom: 1rem;
+  }
+
+  .portfolio-description h3 {
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #2e2e2e;
+    padding-bottom: 1.5rem;
+  }
+
+  .portfolio-item {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    justify-items: start;
+    align-items: center;
+  }
+
+  .portfolio-img img,
+  .portfolio-description {
+    padding-bottom: 1rem;
+    margin-bottom: 6rem;
+  }
+
+  .reverse {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
+  }
+
+  .reverse .portfolio-description {
+    grid-column: 3/2;
+    /* grid-row: 1/2; */
+    justify-self: end;
+  }
+
+  .reverse .portfolio-description h2,
+  .reverse .portfolio-description h3,
+  .reverse .portfolio-description p {
+    text-align: end;
+  }
+
+  .reverse .portfolio-img {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    height: 100%;
+  }
+
+
+  .button {
+    border-radius: 5px;
+    border: 1px solid #5d1a49;
+    padding: 1em 1em;
+    display: inline-block;
+    font-size: 1.5em;
+    font-style: italic;
+    margin: 0 0 2.5em 0;
+    min-width: 10em;
+    transition: all .25s ease;
+    text-align: center;
+}
+  /***********************
+  End Project section
+  **********************/
+
+/***********************
+  Start contact section
+  **********************/
+  #contact {
+    border-top: 1px solid #5d1a49;
+    border-bottom: 1px solid #5d1a49;
+  }
+
+  .container-btn {
+    text-align: center;
+  }
+
+  .cta-button {
+    border-radius: 5px;
+    border: 1px solid #5d1a49;
+    padding: 1em 1em;
+    display: inline-block;
+    font-size: 1.5em;
+    font-style: italic;
+    margin: 0 0 2.5em 0;
+    min-width: 10em;
+    transition: all .25s ease;
+    text-align: center;
+}
+
+.arrow-right {
+  padding-left: 10px;
+  display: inline-block;
+}
+/***********************
+  End contac section
+  **********************/
+
+/****************************
+  Start social-media section
+  ***************************/
+  .nav-social-media {
+    text-align: center;
+  }
+
+  i {
+    font-size: 3rem;
+    margin: 0 1rem 0 1rem;
+  }
+/**************************
+  End social-media section
+  *************************/
+
+/************
+  Start Header
+  ***********/
+  .up,
+  .copyright p {
+    text-align: center;
+  }
+
+  .copyright p {
+    padding-top: 2.5rem;
+  }
+/************
+  End Header
+  ***********/
