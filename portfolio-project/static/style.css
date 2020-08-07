@@ -90,6 +90,7 @@ li {
 header {
   width: 100%;
   font-size: 1.6rem;
+  top: 0;
 }
 
 header .container {
@@ -131,6 +132,10 @@ p .logo {
 /********************
 start welcome-section
 *********************/
+
+#welcome-section {
+  height: 100vh;
+}
 
 #welcome-section h1 {
   text-align: center;
@@ -212,18 +217,11 @@ End welcome section
   }
 
 
-  .button {
-    border-radius: 5px;
-    border: 1px solid #5d1a49;
-    padding: 1em 1em;
-    display: inline-block;
-    font-size: 1.5em;
+  .portfolio-description a {
+    color: #5d1a49;
     font-style: italic;
-    margin: 0 0 2.5em 0;
-    min-width: 10em;
     transition: all .25s ease;
-    text-align: center;
-}
+  }
   /***********************
   End Project section
   **********************/
@@ -272,6 +270,10 @@ End welcome section
     font-size: 3rem;
     margin: 0 1rem 0 1rem;
   }
+
+  #up i {
+    margin-top: 2rem;
+  }
 /**************************
   End social-media section
   *************************/
@@ -290,3 +292,75 @@ End welcome section
 /************
   End Header
   ***********/
+
+/*
+  * Media Queries
+  */
+@media screen and (max-width: 800px){
+  p {
+    font-size: 1.6rem;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  #welcome-section h1 {
+    font-size: 2.5rem;
+  }
+  
+  #welcome-section h3 {
+    font-size: 2rem;
+  }
+  
+  #welcome-section h4 {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  body {
+    border: 2px solid #5d1a49;
+  }
+
+  header {
+    font-size: 1.2rem;
+  }
+
+  #welcome-section h1 {
+    font-size: 2rem;
+    margin: 5rem 0 5rem 0;
+  }
+
+  #welcome-section h3 {
+    font-size: 1.8rem;
+  }
+  
+  #welcome-section h4 {
+    font-size: 1.8rem;
+  }
+
+  .heading h2 {
+    font-size: 1.8rem;
+    margin-top: 7rem;
+  }
+
+  .portfolio-item {
+    display: inline;
+  }
+
+  .portfolio-img img {
+    margin-bottom: 5rem;
+  }
+
+  .portfolio-description {
+    padding-bottom: 1rem;
+    margin-bottom: 0;
+  }
+
+  #contact .heading h2,
+  #social-media .heading h2 {
+    margin-top: 0;
+    margin-bottom: 4rem;
+  }
+}
